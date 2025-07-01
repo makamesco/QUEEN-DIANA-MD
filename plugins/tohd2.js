@@ -104,14 +104,14 @@ const hd = async (m, Matrix) => {
     if (!m.quoted || m.quoted.mtype !== "imageMessage") {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, *Toxic-MD* needs a quoted image to enhance, fam! 📸
+│❒ Yo, *DIANA-MD* needs a quoted image to enhance, fam! 📸
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* crankin’ up that image quality... 🔍✨
+│❒ *DIANA-MD* crankin’ up that image quality... 🔍✨
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
 
@@ -131,7 +131,7 @@ const hd = async (m, Matrix) => {
       {
         image: { url: enhancedImageUrl },
         caption: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* made your image HD AF, fam! 🖼️🔥
+│❒ *DIANA-MD* made your image HD AF, fam! 🖼️🔥
 ◈━━━━━━━━━━━━━━━━◈`,
       },
       { quoted: m }
@@ -140,7 +140,7 @@ const hd = async (m, Matrix) => {
     console.error(`❌ HD error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag enhancin’ that pic, fam! Try again! 😈
+│❒ *DIANA-MD* hit a snag enhancin’ that pic, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
