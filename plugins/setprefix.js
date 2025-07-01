@@ -1,20 +1,20 @@
 import fs from "fs";
 import config from "../config.cjs";
 
-const autoreactCommand = async (m, Matrix) => {
+const setprefixCommand = async (m, Matrix) => {
   try {
     const botNumber = await Matrix.decodeJid(Matrix.user.id);
     const isCreator = [botNumber, config.OWNER_NUMBER + "@s.whatsapp.net"].includes(m.sender);
     const prefix = config.Prefix || config.PREFIX || ".";
     const cmd = m.body?.startsWith(prefix) ? m.body.slice(prefix.length).split(" ")[0].toLowerCase() : "";
-    const text = m.body.slice(prefix.length + cmd.length).trim().toLowerCase();
+    const text = m.body.slice(prefix.length + cmd.length).trim();
 
-    if (cmd !== "autoreact") return;
+    if (cmd !== "setprefix") return;
 
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Get the fuck outta here, wannabe! Only *Toxic-MD*’s boss runs this show! 😤🔪
+│❒ Yo, only *Toxic-MD*’s boss can touch this, fam! 🔐
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -22,45 +22,44 @@ const autoreactCommand = async (m, Matrix) => {
     if (!text) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, dipshit, tell *Toxic-MD* *on* or *off*! Don’t just stand there! 😆
+│❒ Gimme a new prefix, fam! Don’t leave *Toxic-MD* hangin’! 😎
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
-    if (!["on", "off"].includes(text)) {
+    if (text.length > 1) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ What’s this bullshit? *Toxic-MD* only takes *on* or *off*, you moron! 🤡
+│❒ Keep it chill, fam! Prefix gotta be one character only! 😡
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
-    config.AUTO_REACT = text === "on";
-
+    config.PREFIX = text;
     try {
-      fs.writeFileSync("./config.js", `module.exports = ${JSON.stringify(config, null, 2)};`);
+      fs.writeFileSync("./config.cjs", `module.exports = ${JSON.stringify(config, null, 2)};`);
     } catch (error) {
       console.error(`Error saving config: ${error.message}`);
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* choked tryin’ to save that, fam! Server’s actin’ like a bitch! 😣
+│❒ *Toxic-MD* couldn’t save the prefix, fam! Check the server! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* auto-react flipped to *${text}*! You’re ownin’ this game, boss! 💪🔥
+│❒ *Toxic-MD* prefix switched to *${text}*! You’re runnin’ the show, fam! 🔧🔥
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   } catch (error) {
-    console.error(`❌ Autoreact error: ${error.message}`);
+    console.error(`❌ Setprefix error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up somewhere, fam! Smash it again! 😈
+│❒ *Toxic-MD* hit a snag, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
 };
 
-export default autoreactCommand;
+export default setprefixCommand;
