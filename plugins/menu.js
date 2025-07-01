@@ -101,7 +101,7 @@ const menu = async (m, Matrix) => {
 
 ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
 
-> Pσɯҽɾҽԃ Ⴆყ Tσxιƈ-ɱԃȥ
+> 𝑷𝑶𝑾𝑬𝑹𝑬𝑫 𝑩𝒀 𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗
 `;
 
       const messageOptions = {
@@ -186,7 +186,7 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
       // Send audio as a voice note
       await Matrix.sendMessage(
         m.from,
-        { audio: { url: "https://files.catbox.moe/f4zaz4.mp3" }, mimetype: "audio/mp4", ptt: true },
+        { audio: { url: "https://files.catbox.moe/surwrc.mp3" }, mimetype: "audio/mp4", ptt: true },
         { quoted: m }
       );
     }
@@ -382,9 +382,9 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
       // Format the full response
       const fullResponse = `
 ◈━━━━━━━━━━━━━━━━◈
-│❒ ${toFancyFont("Toxic-MD")} - ${toFancyFont(menuTitle)} ⚠
+│❒ ${toFancyFont("DIANA-MD")} - ${toFancyFont(menuTitle)} ⚠
 │
-│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Toxic-MD")}
+│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("DIANA-MD")}
 │ 👤 *${toFancyFont("User")}*: ${m.pushName}
 │ 🔣 *${toFancyFont("Prefix")}*: ${prefix}
 │ 📚 *${toFancyFont("Library")}*: Baileys
@@ -392,7 +392,7 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
 
 ${menuResponse}
 
-> Pσɯҽɾҽԃ Ⴆყ Tσxιƈ-ɱԃȥ
+> 𝑷𝑶𝑾𝑬𝑹𝑬𝑫 𝑩𝒀 𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗
 `;
 
      
