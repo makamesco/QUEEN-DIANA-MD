@@ -14,7 +14,7 @@ const setProfilePicture = async (m, Matrix) => {
     if (!isBot) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Get lost, poser! Only *Toxic-MD* itself can flex this command! 😤🔒
+│❒ Get lost, poser! Only *DIANA-MD* itself can flex this command! 😤🔒
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -22,7 +22,7 @@ const setProfilePicture = async (m, Matrix) => {
     if (!m.quoted?.message?.imageMessage) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, dumbass, reply to a damn *image* for *Toxic-MD*’s glow-up! 🖼️😆
+│❒ Yo, dumbass, reply to a damn *image* for *DIANA-MD*’s glow-up! 🖼️😆
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -39,7 +39,7 @@ const setProfilePicture = async (m, Matrix) => {
           await m.React("❌");
           return Matrix.sendMessage(m.from, {
             text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* can’t grab that image, fam! Shit’s broken, try again! 😣
+│❒ *DIANA-MD* can’t grab that image, fam! Shit’s broken, try again! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
           }, { quoted: m });
         }
@@ -62,7 +62,7 @@ const setProfilePicture = async (m, Matrix) => {
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD*’s new drip is fuckin’ 🔥! Profile pic set, boss! 😎💪
+│❒ *DIANA-MD*’s new drip is fuckin’ 🔥! Profile pic set, boss! 😎💪
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   } catch (error) {
@@ -70,7 +70,7 @@ const setProfilePicture = async (m, Matrix) => {
     await m.React("❌");
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up settin’ that pic, fam! Try again, you got this! 😈
+│❒ *DIANA-MD* fucked up settin’ that pic, fam! Try again, you got this! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
