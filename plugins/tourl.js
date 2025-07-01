@@ -41,7 +41,7 @@ const tourl = async (m, Matrix) => {
     if (!m.quoted || !["imageMessage", "videoMessage", "audioMessage"].includes(m.quoted.mtype)) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, *Toxic-MD* needs a quoted image, video, or audio, fam! 📸🎥🎵
+│❒ Yo, *DIANA-MD* needs a quoted image, video, or audio, fam! 📸🎥🎵
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -65,7 +65,7 @@ const tourl = async (m, Matrix) => {
     const { key } = await Matrix.sendMessage(
       m.from,
       { text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* uploadin’ your media... ${loadingMessages[currentMessageIndex]} 🚀
+│❒ *DIANA-MD* uploadin’ your media... ${loadingMessages[currentMessageIndex]} 🚀
 ◈━━━━━━━━━━━━━━━━◈` },
       { quoted: m }
     );
@@ -75,7 +75,7 @@ const tourl = async (m, Matrix) => {
       await Matrix.sendMessage(
         m.from,
         { text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* uploadin’ your media... ${loadingMessages[currentMessageIndex]} 🚀
+│❒ *DIANA-MD* uploadin’ your media... ${loadingMessages[currentMessageIndex]} 🚀
 ◈━━━━━━━━━━━━━━━━◈` },
         { quoted: m, messageId: key }
       );
@@ -104,7 +104,7 @@ const tourl = async (m, Matrix) => {
       m.from,
       {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* upload done, fam! ✅
+│❒ *DIANA-MD* upload done, fam! ✅
 ◈━━━━━━━━━━━━━━━━◈`,
       },
       { quoted: m }
@@ -116,7 +116,7 @@ const tourl = async (m, Matrix) => {
         m.from,
         {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* got your audio URL, fam! 🎵
+│❒ *DIANA-MD* got your audio URL, fam! 🎵
 │❒ 🔗 *URL*: ${mediaUrl}
 ◈━━━━━━━━━━━━━━━━◈`,
         },
@@ -128,7 +128,7 @@ const tourl = async (m, Matrix) => {
         {
           [mediaType]: { url: mediaUrl },
           caption: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* got your ${mediaType} URL, fam! 📸🎥
+│❒ *DIANA-MD* got your ${mediaType} URL, fam! 📸🎥
 │❒ 🔗 *URL*: ${mediaUrl}
 ◈━━━━━━━━━━━━━━━━◈`,
         },
@@ -140,7 +140,7 @@ const tourl = async (m, Matrix) => {
     console.error(`❌ Tourl error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag uploadin’, fam! Try again! 😈
+│❒ *DIANA-MD* hit a snag uploadin’, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
