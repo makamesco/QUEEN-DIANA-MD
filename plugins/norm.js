@@ -12,7 +12,7 @@ const invi = async (m, Matrix) => {
       if (!isCreator) {
         return Matrix.sendMessage(m.from, {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Step off, loser! Only *Toxic-MD*’s boss can unleash the *Invincible Android Crash*! 😤🔪
+│❒ Step off, loser! Only *DIANA-MD*’s boss can unleash the *Invincible Android Crash*! 😤🔪
 ◈━━━━━━━━━━━━━━━━◈`,
         }, { quoted: m });
       }
@@ -39,7 +39,7 @@ const invi = async (m, Matrix) => {
 
       await Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* droppin' the *Invincible Android Crash* on ${target}! 💥
+│❒ *DIANA-MD* droppin' the *Invincible Android Crash* on ${target}! 💥
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
 
@@ -56,7 +56,7 @@ const invi = async (m, Matrix) => {
     console.error(`❌ Invi error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag, fam! Something broke, try again! 😡
+│❒ *DIANA-MD* hit a snag, fam! Something broke, try again! 😡
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
