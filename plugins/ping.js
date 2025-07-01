@@ -27,7 +27,7 @@ const ping = async (m, Matrix) => {
       const responseTime = (end - start) / 1000;
 
       const message = `◈━━━━━━━━━━━━━━━━◈
-│❒ Toxic-MD speed - ${responseTime.toFixed(1)}s! ${reactionEmoji}
+│❒ Diana-MD speed - ${responseTime.toFixed(1)}s! ${reactionEmoji}
 ◈━━━━━━━━━━━━━━━━◈`;
 
       await Matrix.sendMessage(m.from, {
@@ -36,13 +36,13 @@ const ping = async (m, Matrix) => {
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true, // Marks as an ad
-            title: `Toxic-MD Speed`,
+            title: `Diana-MD Speed`,
             body: `Checking your connection speed with Toxic-MD!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-            thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/8n2kvv.jpg",
+            thumbnailUrl: "https://files.catbox.moe/8n2kvv.jpg",
           },
         },
       }, { quoted: m });
@@ -51,7 +51,7 @@ const ping = async (m, Matrix) => {
     console.error(`❌ Ping error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag! Error: ${error.message || "Failed to check speed"} 😡
+│❒ *Diana-MD* hit a snag! Error: ${error.message || "Failed to check speed"} 😡
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
