@@ -81,13 +81,13 @@ const repo = async (m, Matrix) => {
             mentionedJid: [m.sender],
             externalAdReply: {
               showAdAttribution: true,
-              title: `Toxic-MD Repo`,
-              body: `Check the Toxic-MD repository!`,
-              sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+              title: `DIANA-MD Repo`,
+              body: `Check the DIANA-MD repository!`,
+              sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
               mediaType: 1,
               renderLargerThumbnail: true,
-              mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-              thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+              mediaUrl: "https://files.catbox.moe/8vxmaf.jpg",
+              thumbnailUrl: "https://files.catbox.moe/8vxmaf.jpg",
             },
           },
         },
@@ -98,7 +98,7 @@ const repo = async (m, Matrix) => {
 
     await Matrix.sendMessage(m.from, { react: { text: "⏳", key: m.key } });
 
-    const repoUrl = "https://api.github.com/repos/xhclintohn/Toxic-MD";
+    const repoUrl = "https://github.com/makamesco/QUEEN-DIANA-MD";
     const headers = {
       Accept: "application/vnd.github.v3+json",
       ...(config.GITHUB_TOKEN ? { Authorization: `token ${config.GITHUB_TOKEN}` } : {}),
@@ -115,7 +115,7 @@ const repo = async (m, Matrix) => {
     const lastUpdateDate = new Date(repoData.updated_at).toLocaleDateString("en-GB");
 
     const replyText = `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *${toFancyFont("Toxic-MD")}* ${toFancyFont("Repo")} 📊
+│❒ *${toFancyFont("DIANA-MD")}* ${toFancyFont("Repo")} 📊
 │❒ 📛 *${toFancyFont("Bot")}:* ${repoData.name || "N/A"}
 │❒ 👑 *${toFancyFont("Owner")}:* ${repoData.owner?.login || "N/A"}
 │❒ ⭐ *${toFancyFont("Stars")}:* ${repoData.stargazers_count || 0} (star it, fam!)
@@ -124,25 +124,25 @@ const repo = async (m, Matrix) => {
 │❒ 📅 *${toFancyFont("Created")}:* ${createdDate}
 │❒ 🕒 *${toFancyFont("Updated")}:* ${lastUpdateDate}
 │❒ 🔗 *${toFancyFont("Link")}:* ${repoData.html_url}
-│❒ 💥 *${toFancyFont("Powered By Toxic-MD")}* 🔥
+│❒ 💥 *${toFancyFont("𝑷𝑶𝑾𝑬𝑹𝑬𝑫 𝑩𝒀 𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗")}* 🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`;
 
     await Matrix.sendMessage(
       m.from,
       {
-        image: { url: "https://files.catbox.moe/y2utve.jpg" },
+        image: { url: "https://files.catbox.moe/ugmph3.jpg" },
         caption: replyText,
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true,
-            title: `Toxic-MD Repo`,
-            body: `Explore the Toxic-MD repository!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            title: `DIANA-MD Repo`,
+            body: `Explore the DIANA-MD repository!`,
+            sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-            thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/8vxmaf.jpg",
+            thumbnailUrl: "https://files.catbox.moe/8vxmaf.jpg",
           },
         },
       },
@@ -157,20 +157,20 @@ const repo = async (m, Matrix) => {
       {
         react: { text: "❌", key: m.key },
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* failed to fetch repo stats! 😈
-│❒ Visit: https://github.com/xhclintohn/Toxic-MD
+│❒ *DIANA-MD* failed to fetch repo stats! 😈
+│❒ Visit: https://github.com/makamesco/QUEEN-DIANA-MD
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true,
-            title: `Toxic-MD Repo`,
-            body: `Visit the Toxic-MD repository!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            title: `DIANA-MD Repo`,
+            body: `Visit the DIANA-MD repository!`,
+            sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
-            thumbnailUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/8vxmaf.jpg",
+            thumbnailUrl: "https://files.catbox.moe/8vxmaf.jpg",
           },
         },
       },
