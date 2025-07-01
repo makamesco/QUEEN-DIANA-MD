@@ -45,7 +45,7 @@ function toFancyFont(text, isUpperCase = false) {
 
 // Image fetch utility
 async function fetchMenuImage() {
-  const imageUrl = "https://files.catbox.moe/y2utve.jpg";
+  const imageUrl = "https://files.catbox.moe/vwct84.jpg";
   for (let i = 0; i < 3; i++) {
     try {
       const response = await axios.get(imageUrl, { responseType: "arraybuffer" });
@@ -90,9 +90,9 @@ const menu = async (m, Matrix) => {
     if (validCommands.includes(cmd)) {
       const mainMenu = `
 ◈━━━━━━━━━━━━━━━━◈
-│❒ ${toFancyFont("Toxic-MD")} Command Menu ⚠
+│❒ ${toFancyFont("DIANA-MD")} Command Menu ⚠
 │
-│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("Toxic-MD")}
+│ 🤖 *${toFancyFont("Bot")}*: ${toFancyFont("DIANA-MD")}
 │ 📋 *${toFancyFont("Total Commands")}*: ${totalCommands}
 │ 🔣 *${toFancyFont("Prefix")}*: ${prefix}
 │ 🌐 *${toFancyFont("Mode")}*: ${mode}
@@ -162,12 +162,12 @@ ${pushwish} @*${m.pushName}*! Tap a button to select a menu category:
           mentionedJid: [m.sender],
           externalAdReply: {
             showAdAttribution: true,
-            title: `${toFancyFont("Toxic-MD")} Menu`,
-            body: `${pushwish} Explore Toxic-MD's features!`,
-            sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+            title: `${toFancyFont("DIANA-MD")} Menu`,
+            body: `${pushwish} Explore DIANA-MD's features!`,
+            sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
             mediaType: 1,
             renderLargerThumbnail: true,
-            mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
+            mediaUrl: "https://files.catbox.moe/vwct84.jpg",
           },
         },
       };
@@ -406,12 +406,12 @@ ${menuResponse}
               mentionedJid: [m.sender],
               externalAdReply: {
                 showAdAttribution: true,
-                title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
-                body: `Explore Toxic-MD's ${menuTitle.toLowerCase()} commands!`,
-                sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+                title: `${toFancyFont("DIANA-MD")} ${toFancyFont(menuTitle)}`,
+                body: `Explore DIANA-MD's ${menuTitle.toLowerCase()} commands!`,
+                sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
                 mediaType: 1,
                 renderLargerThumbnail: true,
-                mediaUrl: "https://files.catbox.moe/zaqn1j.jpg",
+                mediaUrl: "https://files.catbox.moe/vwct84.jpg",
               },
             },
           },
@@ -424,9 +424,9 @@ ${menuResponse}
             mentionedJid: [m.sender],
             externalAdReply: {
               showAdAttribution: true,
-              title: `${toFancyFont("Toxic-MD")} ${toFancyFont(menuTitle)}`,
-              body: `Explore Toxic-MD's ${menuTitle.toLowerCase()} commands!`,
-              sourceUrl: "https://github.com/xhclintohn/Toxic-MD",
+              title: `${toFancyFont("DIANA-MD")} ${toFancyFont(menuTitle)}`,
+              body: `Explore Diana-MD's ${menuTitle.toLowerCase()} commands!`,
+              sourceUrl: "https://github.com/makamesco/QUEEN-DIANA-MD",
               mediaType: 1,
               renderLargerThumbnail: true,
             },
@@ -438,7 +438,7 @@ ${menuResponse}
     console.error(`❌ Menu error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag! Error: ${error.message || "Failed to load menu"} 😡
+│❒ *DIANA-MD* hit a snag! Error: ${error.message || "Failed to load menu"} 😡
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
