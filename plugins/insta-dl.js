@@ -27,7 +27,7 @@ const instagram = async (m, Matrix) => {
       console.error(`[ERROR] Invalid Instagram API response: ${JSON.stringify(data)}`);
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* couldn’t fetch the Instagram video. API’s actin’ up! 😡
+│❒ *DIANA-MD* couldn’t fetch the Instagram video. API’s actin’ up! 😡
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -37,7 +37,7 @@ const instagram = async (m, Matrix) => {
       video: { url: download_url },
       mimetype: "video/mp4",
       caption: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* dropped your Instagram video! Watch it 📹, fam!
+│❒ *DIANA-MD* dropped your Instagram video! Watch it 📹, fam!
 ◈━━━━━━━━━━━━━━━━◈`,
       contextInfo: {
         mentionedJid: [m.sender],
@@ -52,7 +52,7 @@ const instagram = async (m, Matrix) => {
     console.error(`[ERROR] Instagram Downloader Error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag while fetching the Instagram video, fam! Try again! 😈
+│❒ *DIANA-MD* hit a snag while fetching the Instagram video, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
