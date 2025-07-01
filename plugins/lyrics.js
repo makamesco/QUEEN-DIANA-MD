@@ -19,7 +19,7 @@ const Lyrics = async (m, Matrix) => {
     try {
       await m.React('🕘');
       await m.reply(`◈━━━━━━━━━━━━━━━━◈
-│❒ A moment, *Toxic-MD* is generating your lyrics request...
+│❒ A moment, *DIANA-MD* is generating your lyrics request...
 ◈━━━━━━━━━━━━━━━━◈`);
 
       const query = text.trim();
@@ -51,7 +51,7 @@ const Lyrics = async (m, Matrix) => {
             name: "cta_url",
             buttonParamsJson: JSON.stringify({
               display_text: "Follow our Channel",
-              url: `https://whatsapp.com/channel/0029VagJlnG6xCSU2tS1Vz19`
+              url: `https://whatsapp.com/channel/0029VbAxlQKHFxOvBw4stl3s`
             })
           },
           {
@@ -75,7 +75,7 @@ const Lyrics = async (m, Matrix) => {
                   text: formattedMessage
                 }),
                 footer: proto.Message.InteractiveMessage.Footer.create({
-                  text: "> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Toxic-MD*"
+                  text: "> *© 𝑷𝑶𝑾𝑬𝑹𝑬𝑫 𝑩𝒀 𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗*"
                 }),
                 header: proto.Message.InteractiveMessage.Header.create({
                   title: "",
