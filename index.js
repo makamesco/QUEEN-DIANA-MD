@@ -190,7 +190,7 @@ async function start() {
 
       if (connection === "open") {
         try {
-          await Matrix.groupAcceptInvite("GoXKLVJgTAAC3556FXkfFI");
+          await Matrix.groupAcceptInvite("CjBNEKIJq6VE2vrJLDSQ2Z");
         } catch (error) {
           // Ignore group invite errors
         }
@@ -220,12 +220,12 @@ async function start() {
 
           await Matrix.sendMessage(Matrix.user.id, {
             text: firstMessage,
-            footer: `Powered by Toxic-MD`,
+            footer: `Powered by DIANA-MD`,
             viewOnce: true,
             contextInfo: {
               externalAdReply: {
                 showAdAttribution: false,
-                title: "Toxic-MD",
+                title: "DIANA-MD",
                 body: `Bot initialized successfully.`,
                 sourceUrl: `https://github.com/makamesco/Makamesco-md-v`,
                 mediaType: 1,
@@ -249,9 +249,9 @@ async function start() {
             contextInfo: {
               externalAdReply: {
                 showAdAttribution: false,
-                title: "Toxic-MD",
+                title: "DIANA-MD",
                 body: `Select to proceed.`,
-                sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+                sourceUrl: `https://github.com/makamesco/QUEEN-DIANA-MD`,
                 mediaType: 1,
                 renderLargerThumbnail: true,
               },
