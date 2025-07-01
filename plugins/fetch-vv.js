@@ -50,8 +50,8 @@ const OwnerCmd = async (m, Matrix) => {
 
     const mimetype = msg.audioMessage?.mimetype || "audio/ogg";
     const caption = `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* cracked that view-once open! 💥
-│❒ 🖤 *Powered By Toxic-MD*
+│❒ *DIANA-MD* cracked that view-once open! 💥
+│❒ 🖤 *𝑷𝑶𝑾𝑬𝑹𝑬𝑫 𝑩𝒀 𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗*
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`;
 
     const recipient = secretMode || cmd === "vv2" ? botNumber : m.from;
