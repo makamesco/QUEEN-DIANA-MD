@@ -27,7 +27,7 @@ const song = async (m, Matrix) => {
       const searchQuery = args.join(" ");
       await Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* huntin’ for "${searchQuery}"... 🎧
+│❒ *DIANA-MD* huntin’ for "${searchQuery}"... 🎧
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
 
@@ -61,7 +61,7 @@ const song = async (m, Matrix) => {
         // Send song info from yt-search and API
         const songInfo = `
 ◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* Song Intel 🔥
+│❒ *DIANA-MD* Song Intel 🔥
 │❒ *Title*: ${song.title}
 │❒ *Views*: ${song.views.toLocaleString()}
 │❒ *Duration*: ${song.timestamp}
@@ -83,7 +83,7 @@ const song = async (m, Matrix) => {
         console.error(`API error:`, apiError.message);
         return Matrix.sendMessage(m.from, {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* couldn’t hit the API for "${song.title}". Server’s actin’ up! 😡
+│❒ *DIANA-MD* couldn’t hit the API for "${song.title}". Server’s actin’ up! 😡
 ◈━━━━━━━━━━━━━━━━◈`,
         }, { quoted: m });
       }
@@ -115,14 +115,14 @@ const song = async (m, Matrix) => {
         console.error(`Failed to send audio:`, sendError.message);
         return Matrix.sendMessage(m.from, {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* can’t song "${song.title}". Failed to send audio 😣
+│❒ *DIANA-MD* can’t song "${song.title}". Failed to send audio 😣
 ◈━━━━━━━━━━━━━━━━◈`,
         }, { quoted: m });
       }
 
       await Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *${song.title}* dropped by *Toxic-MD*! Blast it! 🎶
+│❒ *${song.title}* dropped by *DIANA-MD*! Blast it! 🎶
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -130,7 +130,7 @@ const song = async (m, Matrix) => {
     console.error(`❌ song error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag, fam! Try again or pick a better track! 😈
+│❒ *DIANA-MD* hit a snag, fam! Try again or pick a better track! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
