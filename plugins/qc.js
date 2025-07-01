@@ -24,7 +24,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
     try {
       profilePicture = await gss.profilePictureUrl(m.quoted ? m.quoted.sender : m.sender, 'image');
     } catch {
-      profilePicture = 'https://srv.neoxr.tk/files/z8hI5T.jpg';
+      profilePicture = 'https://files.catbox.moe/bqt4tk.jpg';
     }
 
     const quoteObject = {
