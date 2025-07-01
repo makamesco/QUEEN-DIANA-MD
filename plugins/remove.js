@@ -12,7 +12,7 @@ const kick = async (m, Matrix) => {
     if (!m.isGroup) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, *Toxic-MD* only kicks in groups! 🏠
+│❒ Yo, *DIANA-MD* only kicks in groups! 🏠
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -25,7 +25,7 @@ const kick = async (m, Matrix) => {
     if (!botAdmin) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* needs admin powers to kick, fam! 😡
+│❒ *DIANA-MD* needs admin powers to kick, fam! 😡
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -50,7 +50,7 @@ const kick = async (m, Matrix) => {
     if (users.length === 0) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Tag or quote someone to kick, fam! Don’t ghost *Toxic-MD*! 😤
+│❒ Tag or quote someone to kick, fam! Don’t ghost *DIANA-MD*! 😤
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -66,7 +66,7 @@ const kick = async (m, Matrix) => {
     if (validUsers.length === 0) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Can’t kick nobody, fam! Check the tags or don’t try kickin’ yourself or *Toxic-MD*! 😜
+│❒ Can’t kick nobody, fam! Check the tags or don’t try kickin’ yourself or *DIANA-MD*! 😜
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -75,7 +75,7 @@ const kick = async (m, Matrix) => {
     const kickedNames = validUsers.map((user) => `@${user.split("@")[0]}`).join(", ");
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ ${kickedNames} got yeeted from *${groupMetadata.subject}* by *Toxic-MD*! 👊💥
+│❒ ${kickedNames} got yeeted from *${groupMetadata.subject}* by *DIANA-MD*! 👊💥
 ◈━━━━━━━━━━━━━━━━◈`,
       contextInfo: { mentionedJid: validUsers },
     }, { quoted: m });
@@ -83,7 +83,7 @@ const kick = async (m, Matrix) => {
     console.error(`❌ Kick error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag kickin’, fam! Try again! 😈
+│❒ *DIANA-MD* hit a snag kickin’, fam! Try again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
