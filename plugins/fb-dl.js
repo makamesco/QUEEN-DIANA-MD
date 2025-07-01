@@ -12,7 +12,7 @@ const facebook = async (m, Matrix) => {
     if (!query || !query.startsWith("http")) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, dumbass, gimme a proper *Facebook video URL*! Don’t waste *Toxic-MD*’s time! 😤📹
+│❒ Yo, dumbass, gimme a proper *Facebook video URL*! Don’t waste *DIANA-MD*’s time! 😤📹
 │❒ Ex: *${prefix}fb https://fb.watch/xxx*
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
@@ -26,7 +26,7 @@ const facebook = async (m, Matrix) => {
       await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* couldn’t grab that video, fam! URL’s trash or somethin’s busted! 😣
+│❒ *DIANA-MD* couldn’t grab that video, fam! URL’s trash or somethin’s busted! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -38,17 +38,17 @@ const facebook = async (m, Matrix) => {
       await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ No video worth downloadin’ here, fam! *Toxic-MD* ain’t got time for this shit! 😆
+│❒ No video worth downloadin’ here, fam! *DIANA-MD* ain’t got time for this shit! 😆
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
     const quality = hd_video ? "HD" : "SD";
     const caption = `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* Facebook Video 📹
+│❒ *DIANA-MD* Facebook Video 📹
 │❒ 🎬 *Title*: ${title || "No title"}
 │❒ 📥 *Quality*: ${quality}
-│❒ 💥 Powered By *Toxic-MD* 🖤
+│❒ 💥 Powered By *𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗* 🖤
 ◈━━━━━━━━━━━━━━━━◈`;
 
     await Matrix.sendMessage(m.from, {
@@ -63,7 +63,7 @@ const facebook = async (m, Matrix) => {
     await Matrix.sendMessage(m.from, { react: { text: "❌", key: m.key } });
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up grabbin’ that video, fam! Try again, you got this! 😈
+│❒ *DIANA-MD* fucked up grabbin’ that video, fam! Try again, you got this! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
