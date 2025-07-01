@@ -14,7 +14,7 @@ const autostatusreplyCommand = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ Get lost, poser! Only *Toxic-MD*'s boss can fuck with status replies! 😤🔪
+│❒ Get lost, poser! Only *DIANA-MD*'s boss can fuck with status replies! 😤🔪
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
     }
@@ -22,7 +22,7 @@ const autostatusreplyCommand = async (m, Matrix) => {
     if (!text) {
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ Yo, braindead, tell *Toxic-MD* *on* or *off*! Don't just stare! 😆
+│❒ Yo, braindead, tell *DIANA-MD* *on* or *off*! Don't just stare! 😆
 │❒ Ex: *${prefix}autostatusreply on*
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
@@ -31,7 +31,7 @@ const autostatusreplyCommand = async (m, Matrix) => {
     if (!["on", "off"].includes(text)) {
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ What's this garbage? *Toxic-MD* only takes *on* or *off*, clown! 🤡
+│❒ What's this garbage? *DIANA-MD* only takes *on* or *off*, clown! 🤡
 │❒ Ex: *${prefix}autostatusreply on*
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
@@ -45,21 +45,21 @@ const autostatusreplyCommand = async (m, Matrix) => {
       console.error(`Error saving config.cjs: ${error.message}`);
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* choked tryin' to save that, fam! Server's trash! 😣
+│❒ *DIANA-MD* choked tryin' to save that, fam! Server's trash! 😣
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
     }
 
     await Matrix.sendMessage(m.from, {
       text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* auto-status reply flipped to *${text}*! You're runnin' this, boss! 💪🔥
+│❒ *DIANA-MD* auto-status reply flipped to *${text}*! You're runnin' this, boss! 💪🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
     }, { quoted: m });
   } catch (error) {
     console.error(`❌ Autostatusreply error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* screwed up somewhere, fam! Hit it again! 😈
+│❒ *DIANA-MD* screwed up somewhere, fam! Hit it again! 😈
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
     }, { quoted: m });
   }
