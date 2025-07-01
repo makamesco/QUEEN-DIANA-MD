@@ -38,7 +38,7 @@ const tiktok = async (m, Matrix) => {
 │❒ ❤️ *Likes:* ${stats.likeCount}
 │❒ 💬 *Comments:* ${stats.commentCount}
 │❒ 🔄 *Shares:* ${stats.shareCount}
-│❒ 📥 *Powered By Toxic-MD ✅*
+│❒ 📥 *𝑷𝑶𝑾𝑬𝑹𝑬𝑫 𝑩𝒀 𝑫𝒊𝒂𝑵𝑨 𝑫𝒆𝒗👩‍💻*
 ◈━━━━━━━━━━━━━━━━◈`;
 
     await Matrix.sendMessage(m.from, {
