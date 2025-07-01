@@ -93,7 +93,7 @@ const update = async (m, Matrix) => {
     });
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* is rippin’ open that ZIP, fam... 📦
+│❒ *Diana-MD* is rippin’ open that ZIP, fam... 📦
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     // Extract ZIP
@@ -102,11 +102,11 @@ const update = async (m, Matrix) => {
     zip.extractAllTo(extractPath, true);
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ Swappin’ out the old shit for new *Toxic-MD* heat... 🔄
+│❒ Swappin’ out the old shit for new *Diana-MD* heat... 🔄
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     // Replace files, skip configs
-    const sourcePath = path.join(extractPath, "Toxic-MD-main");
+    const sourcePath = path.join(extractPath, "Diana-MD-main");
     await copyFolderSync(sourcePath, process.cwd(), ["package.json", "config.cjs", ".env", "node_modules"]);
 
     // Update package.json with new commit hash
@@ -118,7 +118,7 @@ const update = async (m, Matrix) => {
     if (fs.existsSync(extractPath)) fs.rmSync(extractPath, { recursive: true, force: true });
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* update locked in! Restarting to flex the new shit... ♻️🔥
+│❒ *Diana-MD* update locked in! Restarting to flex the new shit... ♻️🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     await m.React("✅");
@@ -130,7 +130,7 @@ const update = async (m, Matrix) => {
       m.from,
       {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* fucked up the update, fam! Error: ${error.message} 😈
+│❒ *Diana-MD* fucked up the update, fam! Error: ${error.message} 😈
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       },
       { quoted: m }
