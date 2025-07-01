@@ -25,7 +25,7 @@ const update = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ Piss off, wannabe! Only *Toxic-MD* or its boss can update this beast! 😤🔪
+│❒ Piss off, wannabe! Only *Diana-MD* or its boss can update this beast! 😤🔪
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`,
       }, { quoted: m });
     }
@@ -35,7 +35,7 @@ const update = async (m, Matrix) => {
     const msg = await Matrix.sendMessage(
       m.from,
       { text: `◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* is sniffin’ for updates, fam! Hold tight... 🕵️‍♂️
+│❒ *Diana-MD* is sniffin’ for updates, fam! Hold tight... 🕵️‍♂️
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈` },
       { quoted: m }
     );
@@ -59,7 +59,7 @@ const update = async (m, Matrix) => {
     if (!fs.existsSync(packageJsonPath)) {
       await m.React("❌");
       return editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* can’t find package.json, fam! Shit’s broken! 😣
+│❒ *Diana-MD* can’t find package.json, fam! Shit’s broken! 😣
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
     }
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
@@ -68,12 +68,12 @@ const update = async (m, Matrix) => {
     if (latestCommitHash === currentHash) {
       await m.React("✅");
       return editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ *Toxic-MD* is fresh as fuck, fam! No updates needed! 😎🔥
+│❒ *Diana-MD* is fresh as fuck, fam! No updates needed! 😎🔥
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
     }
 
     await editMessage(`◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈
-│❒ New *Toxic-MD* update found! Snatchin’ that shit now... 🚀
+│❒ New *Diana-MD* update found! Snatchin’ that shit now... 🚀
 ◈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅◈`);
 
     // Download latest ZIP
