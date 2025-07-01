@@ -14,7 +14,7 @@ const autoreactCommand = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Get the fuck outta here, wannabe! Only *Toxic-MD*’s boss runs this show! 😤🔪
+│❒ Get the fuck outta here, wannabe! Only *DIANA-MD*’s boss runs this show! 😤🔪
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -22,7 +22,7 @@ const autoreactCommand = async (m, Matrix) => {
     if (!text) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, dipshit, tell *Toxic-MD* *on* or *off*! Don’t just stand there! 😆
+│❒ Yo, dipshit, tell *DIANA-MD* *on* or *off*! Don’t just stand there! 😆
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -30,7 +30,7 @@ const autoreactCommand = async (m, Matrix) => {
     if (!["on", "off"].includes(text)) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ What’s this bullshit? *Toxic-MD* only takes *on* or *off*, you moron! 🤡
+│❒ What’s this bullshit? *DIANA-MD* only takes *on* or *off*, you moron! 🤡
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -43,21 +43,21 @@ const autoreactCommand = async (m, Matrix) => {
       console.error(`Error saving config: ${error.message}`);
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* choked tryin’ to save that, fam! Server’s actin’ like a bitch! 😣
+│❒ *DIANA-MD* choked tryin’ to save that, fam! Server’s actin’ like a bitch! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* auto-react flipped to *${text}*! You’re ownin’ this game, boss! 💪🔥
+│❒ *DIANA-MD* auto-react flipped to *${text}*! You’re ownin’ this game, boss! 💪🔥
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   } catch (error) {
     console.error(`❌ Autoreact error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up somewhere, fam! Smash it again! 😈
+│❒ *DIANA-MD* fucked up somewhere, fam! Smash it again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
