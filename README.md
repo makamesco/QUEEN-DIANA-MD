@@ -1,70 +1,44 @@
 # 🤖 QUEEN-DIANA-MD WhatsApp Bot
 
-**QUEEN-DIANA-MD** is a powerful and flexible WhatsApp Multi-Device bot built using [Baileys](https://github.com/adiwajshing/Baileys). It’s packed with media tools, moderation features, group automation, and more — simple to deploy and fully customizable!
+**QUEEN-DIANA-MD** is a powerful, fast, and flexible WhatsApp Multi-Device bot built using [Baileys](https://github.com/adiwajshing/Baileys). It comes with group automation tools, media downloaders, fun commands, NSFW (optional), and full customizability.
 
-<p align="center">
-  <img src="https://files.catbox.moe/21bevd.jpg" alt="QUEEN DIANA MD Logo" width="300"/>
-</p>
+![QUEEN DIANA MD Logo](https://files.catbox.moe/21bevd.jpg)
 
 ---
 
-<p align="center">
-  <a href="https://heroku.com/deploy?template=https://github.com/makamesco/QUEEN-DIANA-MD">
-    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku"/>
-  </a>
-  &nbsp;
-  <a href="https://makamesco-session-site-1.onrender.com">
-    <img src="https://img.shields.io/badge/Generate%20Session-Click-green?style=for-the-badge&logo=whatsapp" alt="Generate Session"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/makamesco/QUEEN-DIANA-MD/archive/refs/heads/main.zip">
-    <img src="https://img.shields.io/badge/Download-ZIP-blue?style=for-the-badge&logo=github" alt="Download ZIP"/>
-  </a>
-</p>
+## 🚀 Deploy to Heroku
+
+Click the button below to deploy QUEEN-DIANA-MD to Heroku in 1 click.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makamesco/QUEEN-DIANA-MD)
 
 ---
 
-## 🌟 Features
+## 🧩 Generate Session ID
 
-- 🤖 Group moderation: anti-link, welcome/goodbye messages, auto-kick
-- 📥 Media tools: YouTube, TikTok, Instagram downloader
-- 🛠️ Auto-reply, sticker maker, fun tools
-- 🔞 Optional NSFW commands
-- 📷 Screenshot, weather, forex, news
-- ⚡ Lightweight, fast, and deployable in 1 click
+Before deploying, generate a session ID:
 
----
+👉 Visit: **https://makamesco-session-site-1.onrender.com**  
+Scan the QR code with WhatsApp and copy your session string.
 
-## ⚙️ Heroku Setup (Environment Variables)
-
-| Variable Name     | Description                                                |
-|-------------------|------------------------------------------------------------|
-| `SESSION_ID`      | Session string from QR generator                           |
-| `BOT_NAME`        | Your custom bot name                                       |
-| `OWNER_NAME`      | Owner/creator name                                         |
-| `OWNER_NUMBER`    | WhatsApp number (with country code, e.g. `2547XXXXXXXX`)   |
-| `PACKNAME`        | Sticker pack name                                          |
-| `AUTHOR`          | Sticker author name                                        |
-
-**Optional variables:**
-
-| Variable         | Description                               |
-|------------------|-------------------------------------------|
-| `AUTO_REPLY`     | `true` or `false`                          |
-| `DATABASE_URL`   | MongoDB URL (optional for session storage) |
+Use it in Heroku as the value for `SESSION_ID`.
 
 ---
 
-## 🧪 Generate SESSION_ID
+## ⚙️ Required Heroku Config Vars
 
-1. Click the green **Generate Session** badge above  
-2. Scan QR code with your WhatsApp  
-3. Copy the session string  
-4. Paste into `SESSION_ID` on Heroku
+| Key            | Value Description                                         |
+|----------------|-----------------------------------------------------------|
+| `SESSION_ID`   | Session string you get from the session generator site    |
+| `BOT_NAME`     | Name of your bot (e.g., Diana-MD)                         |
+| `OWNER_NAME`   | Your name or alias                                        |
+| `OWNER_NUMBER` | Your WhatsApp number with country code (e.g., 2547xxxxxx) |
+| `PACKNAME`     | Name for your sticker pack                                |
+| `AUTHOR`       | Author name for stickers                                  |
 
 ---
 
-## 🛠️ Manual Installation
+## 🛠 Manual Installation (Advanced)
 
 ```bash
 git clone https://github.com/makamesco/QUEEN-DIANA-MD
