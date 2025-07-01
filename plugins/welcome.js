@@ -24,7 +24,7 @@ const gcEvent = async (m, Matrix) => {
       if (!botAdmin) {
         return Matrix.sendMessage(m.from, {
           text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* needs admin powers to run this, fam! 😡
+│❒ *Diana-MD* needs admin powers to run this, fam! 😡
 ◈━━━━━━━━━━━━━━━━◈`,
         }, { quoted: m });
       }
@@ -41,12 +41,12 @@ const gcEvent = async (m, Matrix) => {
       if (text === "on") {
         config.WELCOME = true;
         responseMessage = `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* welcome & left messages ON! Newbies beware! 😈
+│❒ *Diana-MD* welcome & left messages ON! Newbies beware! 😈
 ◈━━━━━━━━━━━━━━━━◈`;
       } else if (text === "off") {
         config.WELCOME = false;
         responseMessage = `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* welcome & left messages OFF! Silent mode, fam! 💀
+│❒ *Diana-MD* welcome & left messages OFF! Silent mode, fam! 💀
 ◈━━━━━━━━━━━━━━━━◈`;
       } else {
         responseMessage = `◈━━━━━━━━━━━━━━━━◈
@@ -62,7 +62,7 @@ const gcEvent = async (m, Matrix) => {
     console.error(`❌ Welcome error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* hit a snag, fam! Try again, we still savage! 😈
+│❒ *Diana-MD* hit a snag, fam! Try again, we still savage! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
