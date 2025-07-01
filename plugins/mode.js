@@ -14,7 +14,7 @@ const modeCommand = async (m, Matrix) => {
     if (!isCreator) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Back off, scrub! Only *Toxic-MD*’s king can mess with this! 😤🔒
+│❒ Back off, scrub! Only *DIANA-MD*’s king can mess with this! 😤🔒
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -22,7 +22,7 @@ const modeCommand = async (m, Matrix) => {
     if (!text) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ Yo, genius, tell *Toxic-MD* what mode! Use *public* or *private*, dumbass! 😆
+│❒ Yo, genius, tell *DIANA-MD* what mode! Use *public* or *private*, dumbass! 😆
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -30,7 +30,7 @@ const modeCommand = async (m, Matrix) => {
     if (!["public", "private"].includes(text)) {
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ What’s this trash? *Toxic-MD* only takes *public* or *private*! Get it right, clown! 🤡
+│❒ What’s this trash? *DIANA-MD* only takes *public* or *private*! Get it right, clown! 🤡
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
@@ -44,21 +44,21 @@ const modeCommand = async (m, Matrix) => {
       console.error(`Error saving config: ${error.message}`);
       return Matrix.sendMessage(m.from, {
         text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* choked tryin’ to save that mode, fam! Server’s actin’ weak! 😣
+│❒ *DIANA-MD* choked tryin’ to save that mode, fam! Server’s actin’ weak! 😣
 ◈━━━━━━━━━━━━━━━━◈`,
       }, { quoted: m });
     }
 
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* flipped to *${text}* mode! You’re runnin’ this shit now, boss! 💪🔥
+│❒ *DIANA-MD* flipped to *${text}* mode! You’re runnin’ this shit now, boss! 💪🔥
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   } catch (error) {
     console.error(`❌ Mode error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* fucked up somewhere, fam! Try that again! 😈
+│❒ *DIANA-MD* fucked up somewhere, fam! Try that again! 😈
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
