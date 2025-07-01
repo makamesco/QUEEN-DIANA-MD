@@ -1,48 +1,44 @@
 # 🤖 QUEEN-DIANA-MD WhatsApp Bot
 
-**QUEEN-DIANA-MD** is a powerful and flexible WhatsApp Multi-Device bot built using [Baileys](https://github.com/adiwajshing/Baileys). It’s packed with features for group management, automation, fun commands, media tools, and much more!
+**QUEEN-DIANA-MD** is a powerful and flexible WhatsApp Multi-Device bot built using [Baileys](https://github.com/adiwajshing/Baileys). Packed with tools for automation, media, moderation, games, and more — easy to deploy and highly customizable!
 
 <p align="center">
-  <img src="https://files.catbox.moe/21bevd.jpg" width="250" alt="QUEEN DIANA MD Logo"/>
+  <img src="https://files.catbox.moe/21bevd.jpg" alt="QUEEN DIANA MD Logo" width="300"/>
 </p>
 
 ---
 
-## 🚀 Quick Deploy & Tools
+## 🚀 Quick Access
 
-| Option              | Link                                                                 |
-|---------------------|----------------------------------------------------------------------|
-| 🟣 Deploy to Heroku  | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makamesco/QUEEN-DIANA-MD) |
-| 📦 Download ZIP      | [Click to Download](https://github.com/makamesco/QUEEN-DIANA-MD/archive/refs/heads/main.zip) |
-| 🔑 Pair Session ID   | [Generate Session Here](https://makamesco-session-site-1.onrender.com) |
+- 🔧 **[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/makamesco/QUEEN-DIANA-MD)**
+- 🧩 **[Generate Session ID](https://makamesco-session-site-1.onrender.com)**
+- 📦 **[Download ZIP](https://github.com/makamesco/QUEEN-DIANA-MD/archive/refs/heads/main.zip)**
 
 ---
 
-## 💫 Features
+## 🌟 Features
 
-- ✅ Group moderation & anti-spam
-- 📥 Downloader: YouTube, Instagram, Twitter, etc.
-- 🎮 Fun games, NSFW content (optional)
-- 🎶 Lyrics, Music, Screenshot, Weather tools
-- ⚽ Football news, Forex updates
-- ⚡ Fast & lightweight
+- 🤖 Group moderation (anti-link, welcome, goodbye, etc.)
+- 🎵 Downloaders (YouTube, Instagram, TikTok, etc.)
+- 🔞 Optional NSFW Menu
+- 🎮 Fun Games & Tools
+- 📷 Screenshot, Weather, News, Forex
+- 📡 Auto-reply, Menus, and more!
 
 ---
 
-## ⚙️ Environment Variables (Heroku Config)
-
-Set the following variables in your **Heroku → Settings → Config Vars**:
+## ⚙️ Heroku Environment Variables
 
 | Variable Name     | Description                                                |
 |-------------------|------------------------------------------------------------|
-| `SESSION_ID`      | Your generated session ID (from session generator site)    |
-| `BOT_NAME`        | The name you want for the bot                              |
-| `OWNER_NAME`      | Your name or tag                                           |
-| `OWNER_NUMBER`    | WhatsApp number with country code (`2547xxxxxxxx`)         |
+| `SESSION_ID`      | Session string from session generator                      |
+| `BOT_NAME`        | Custom bot name                                            |
+| `OWNER_NAME`      | Bot owner name                                             |
+| `OWNER_NUMBER`    | Bot owner's WhatsApp number (with country code)            |
 | `PACKNAME`        | Sticker pack name                                          |
 | `AUTHOR`          | Sticker author name                                        |
 
-#### ✅ Optional:
+#### 🔧 Optional Variables:
 | Variable         | Description                               |
 |------------------|-------------------------------------------|
 | `AUTO_REPLY`     | Enable auto-response (`true` or `false`)   |
@@ -50,16 +46,16 @@ Set the following variables in your **Heroku → Settings → Config Vars**:
 
 ---
 
-## 🧪 How to Get `SESSION_ID`
+## 🧪 Generate Session ID
 
-1. Visit the [Session Generator](https://makamesco-session-site-1.onrender.com)
-2. Scan the QR Code using your WhatsApp
-3. Copy the generated session string
-4. Paste into session.json for deployment`SESSION_ID` field
+1. Click this link → [Generate Session ID](https://makamesco-session-site-1.onrender.com)
+2. Scan the QR Code with your WhatsApp
+3. Copy the session string shown
+4. Paste it into the `SESSION_ID` field on Heroku
 
 ---
 
-## 🧰 Manual Installation (For Devs)
+## 🛠️ Manual Installation
 
 ```bash
 git clone https://github.com/makamesco/QUEEN-DIANA-MD
