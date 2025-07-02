@@ -2,7 +2,7 @@
 
 **QUEEN-DIANA-MD** is a powerful, fast, and flexible WhatsApp Multi-Device bot built using [Baileys](https://github.com/adiwajshing/Baileys). It comes with group automation tools, media downloaders, fun commands, NSFW (optional), and full customizability.
 
-![QUEEN DIANA MD Logo](https://files.catbox.moe/21bevd.jpg)
+![QUEEN DIANA MD Logo](https://files.catbox.moe/cxmlv1.jpg)
 
 ---
 
