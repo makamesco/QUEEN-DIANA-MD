@@ -42,7 +42,7 @@ if (!fs.existsSync(sessionDir)) {
 async function loadBase64Session() {
   const sessionFile = path.join(__dirname, "session.json");
 
-  // Check if session.json exists
+  // 1. Check if session.json exists
   if (!fs.existsSync(sessionFile)) {
     console.error(chalk.red(`◈━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◈
 │❒ session.json not found!
@@ -75,7 +75,7 @@ async function loadBase64Session() {
     process.exit(1);
   }
 
-  // write creds.json
+  // Decode and write creds.json
   try {
     const credsBuffer = Buffer.from(base64Creds, "base64");
     await fs.promises.writeFile(credsPath, credsBuffer);
@@ -121,7 +121,7 @@ function toFancyFont(text, isUpperCase = false) {
 }
 
 // Status reply messages
-const QueenDeeReplies = [
+const toxicReplies = [
   "Yo, caught your status. Straight-up savage! 😈",
   "Damn, that status tho! You out here wildin’! 🔥",
   "Saw your status. Bruh, you’re on another level! 💀",
@@ -199,16 +199,16 @@ async function start() {
           const firstMessage = [
             `◈━━━━━━━━━━━━━━━━◈`,
             `│❒ *${getGreeting()}*`,
-            `│❒ Welcome to *🅳🅸🅰🅽🅰 🅼🅳*! You're now connected.`,
+            `│❒ Welcome to *MAKAMESCO-MD*! You're now connected.`,
             ``,
-            `✨ *Bot Name*: 🅳🅸🅰🅽🅰 🅼🅳`,
+            `✨ *Bot Name*: Makamesco-MD`,
             `🔧 *Mode*: ${config.MODE || "public"}`,
             `➡️ *Prefix*: ${prefix}`,
             `🕒 *Time*: ${getCurrentTime()}`,
             `💾 *Database*: None`,
             `📚 *Library*: Baileys`,
             ``,
-            `│❒ *Credits*: Queen Diana`,
+            `│❒ *Credits*: Marcas`,
             `◈━━━━━━━━━━━━━━━━◈`,
           ].join("\n");
 
@@ -220,14 +220,14 @@ async function start() {
 
           await Matrix.sendMessage(Matrix.user.id, {
             text: firstMessage,
-            footer: `Powered by DIANA-MD`,
+            footer: `Powered by Makamesco-MD`,
             viewOnce: true,
             contextInfo: {
               externalAdReply: {
                 showAdAttribution: false,
-                title: "DIANA-MD",
+                title: "Makamesco-MD",
                 body: `Bot initialized successfully.`,
-                sourceUrl: `https://github.com/makamesco/Makamesco-md-v`,
+                sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
                 mediaType: 1,
                 renderLargerThumbnail: true,
               },
@@ -236,7 +236,7 @@ async function start() {
 
           await Matrix.sendMessage(Matrix.user.id, {
             text: secondMessage,
-            footer: `Powered by DIANA`,
+            footer: `Powered by MAKAMESCO-MD`,
             buttons: [
               {
                 buttonId: `${prefix}menu`,
@@ -249,9 +249,9 @@ async function start() {
             contextInfo: {
               externalAdReply: {
                 showAdAttribution: false,
-                title: "DIANA-MD",
+                title: "Makamesco-MD",
                 body: `Select to proceed.`,
-                sourceUrl: `https://github.com/makamesco/QUEEN-DIANA-MD`,
+                sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
                 mediaType: 1,
                 renderLargerThumbnail: true,
               },
@@ -262,7 +262,7 @@ async function start() {
         }
 
         console.log(chalk.green(`◈━━━━━━━━━━━━━━━━◈
-│❒ DIANA-MD connected
+│❒ Makamesco-MD-v connected
 ◈━━━━━━━━━━━━━━━━◈`));
       }
     });
@@ -346,10 +346,7 @@ async function start() {
 start();
 
 app.get("/", (req, res) => {
-  res.send("Diana-MD is running!");
+  res.send("MAKAMESCO_MD is running!");
 });
-const PORT=process.env.PORT || 3000;
 
 app.listen(PORT, () => {});
-console.log('DIANA IS RUNNING on port ${PORT}');
-});
