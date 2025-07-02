@@ -141,14 +141,14 @@ async function start() {
     const Matrix = makeWASocket({
       version,
       logger: pino({ level: "silent" }),
-      browser: ["Toxic-MD", "Chrome", "1.0.0"],
+      browser: ["DIANA-MD", "Chrome", "1.0.0"],
       auth: state,
       getMessage: async (key) => {
         if (store) {
           const msg = await store.loadMessage(key.remoteJid, key.id);
           return msg.message || undefined;
         }
-        return { conversation: "Toxic-MD whatsapp user bot" };
+        return { conversation: "DIANA-MD whatsapp user bot" };
       },
     });
 
