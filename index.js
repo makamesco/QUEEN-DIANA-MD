@@ -348,5 +348,8 @@ start();
 app.get("/", (req, res) => {
   res.send("Diana-MD is running!");
 });
+const PORT=process.env.PORT || 3000;
 
 app.listen(PORT, () => {});
+console.log('DIANA IS RUNNING on port ${PORT}');
+});
